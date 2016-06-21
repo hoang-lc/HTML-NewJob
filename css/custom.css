@@ -1,1 +1,17 @@
-.container {}
+p a,
+li a,
+h1 a {
+   -webkit-transition: all 0.2s ease-out;
+   -moz-transition: all 0.2s ease-out;
+   transition: all 0.2s ease-out;
+   border-bottom: 1px solid #a6a2a6;
+   padding-bottom: 1px;
+   text-decoration: none;
+}
+p a:hover, li a:hover, h1 a:hover {
+   -webkit-transition: color 0.2s ease-out;
+   -moz-transition: color 0.2s ease-out;
+   transition: color 0.2s ease-out;
+   color: #d37961;
+   border-bottom-color: #d37961;
+}
