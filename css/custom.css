@@ -2,9 +2,8 @@ body {
    font-family: 'Roboto', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 i .fa {
-  font-family: "FontAwesome";
+   font-family: "FontAwesome";
 }
-
 p a,
 li a,
 h1 a {
@@ -15,10 +14,63 @@ h1 a {
    padding-bottom: 0px;
    text-decoration: none;
 }
-p a:hover, li a:hover, h1 a:hover {
+p a:hover,
+li a:hover,
+h1 a:hover {
    -webkit-transition: color 0.2s ease-out;
    -moz-transition: color 0.2s ease-out;
    transition: color 0.2s ease-out;
    color: #d37961;
    border-bottom-color: #d37961;
+}
+#featured {
+   /*   display: none;*/
+   position: relative;
+}
+.tab-wrapper {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/*Tabs*/
+
+.tab-wrapper {
+   width: 500px;
+   margin: 0px auto;
+   border: solid 1px #acacac;
+}
+.tab-wrapper ul {
+   overflow: hidden;
+   background: #aee655;
+   margin: 0px;
+   padding: 0px;
+}
+.tab-wrapper ul li {
+   float: left;
+   list-style: none;
+   padding: 10px 20px;
+   background: #348ec9;
+   border-radius: 10px 10px 0px 0px;
+   margin-right: 5px;
+   margin-top: 5px;
+}
+.tab-wrapper ul li.active {
+   background: #Fff;
+}
+.tab-wrapper ul li.active a {
+   color: blue;
+}
+.tab-wrapper ul li a {
+   color: #fff;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+.tab-content {
+   padding: 20px;
+   background-color: #fff;
+}
+.tab-item {
+   display: none;
 }
